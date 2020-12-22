@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <h1>My Library</h1>
+    
+    <div><center><button type="button" class="newBtn">+ Add new book</button></center></div>
+
+    <div class="popup-form">
+        <form id="myForm">
+            <h2>New book<span class="close" style="float: right;">×</span></h2>
+            <div>
+                <input type="text" name="title" placeholder="Title" required>
+            </div>
+            <div>
+                <input type="text" name="author" placeholder="Author" required>
+            </div>
+            <div>
+                <input type="number" name="pages" placeholder="Pages" required>
+            </div>
+            <div> 
+                <p>
+                    <label for="read">Finished reading yet?</label>
+                    <input type="checkbox" name="read"> 
+                </p>
+            </div>
+
+            <center><button type="submit" class="addBtn">Add</button></center>
+        </form>
+    </div>
+    <div class="cards-container">
+        <div class="card" id="0">
+            <div id="title">Title</div>
+            <div id="author">Author</div>
+            <div id="pages">123</div>
+            <button type="button" id="readBtn">Read</button>
+            <button type="button" id="removeBtn">Remove</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
